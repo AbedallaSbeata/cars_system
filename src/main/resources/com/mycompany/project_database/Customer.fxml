@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: ht; -fx-border-color: E8D004;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.project_database.Customer">
+   <children>
+      <AnchorPane prefHeight="38.0" prefWidth="700.0" style="-fx-background-color: EAEAEA; -fx-border-color: E8D004; -fx-background-size: 20;" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="8.0" layoutY="1.0" prefHeight="36.0" prefWidth="105.0" text="Golden">
+               <font>
+                  <Font name="Century Gothic Bold" size="28.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.37914691943127965" endY="1.0" startX="0.3696682464454976" startY="0.5355450236966824">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8199999928474426" green="0.73253333568573" blue="0.164000004529953" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="316.0" layoutY="9.0" prefHeight="20.0" prefWidth="78.0" text="Customer">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="595.0" layoutY="94.0" />
+      <Button layoutX="61.0" layoutY="438.0" mnemonicParsing="false" onAction="#SignOut" prefHeight="29.0" prefWidth="71.0" style="-fx-background-color: EAEAEA; -fx-border-color: E8D004; -fx-border-radius: 5;" text="Sign out" textFill="#b51e1e">
+         <font>
+            <Font name="Centaur" size="14.5" />
+         </font>
+      </Button>
+      <Label layoutX="461.0" layoutY="300.0" prefHeight="19.0" prefWidth="189.0" textFill="#f52929">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="188.0" layoutY="45.0" mnemonicParsing="false" onAction="#carShow" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: EAEAEA; -fx-border-color: E8D004; -fx-border-radius: 0;" text="Show Cars">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="266.0" layoutY="45.0" mnemonicParsing="false" onAction="#myCars" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: EAEAEA; -fx-border-color: E8D004; -fx-border-radius: 0;" text="My Cars">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="id" layoutX="30.0" layoutY="145.0" prefHeight="30.0" prefWidth="134.0" promptText="Enter car id to buy" style="-fx-border-color: E8D004;">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="120.0" prefHeight="22.0" prefWidth="51.0" style="-fx-border-color: white;" text="Car Id:">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="58.0" layoutY="220.0" mnemonicParsing="false" onAction="#buy" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: EAEAEA; -fx-border-color: E8D004; -fx-border-radius: 10;" text="Buy" textFill="#448d2e">
+         <font>
+            <Font name="Centaur" size="14.5" />
+         </font>
+      </Button>
+      <Label fx:id="buyMassage" layoutX="64.0" layoutY="181.0" prefHeight="20.0" prefWidth="65.0" style="-fx-border-color: white;" textFill="#21b239">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMassage" layoutX="24.0" layoutY="181.0" prefHeight="20.0" prefWidth="144.0" style="-fx-border-color: white;" textFill="#c33222">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="table" layoutX="188.0" layoutY="71.0" prefHeight="404.0" prefWidth="500.0" style="-fx-border-color: E8D004;">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></TextArea>
+      <Label layoutX="13.0" layoutY="345.0" prefHeight="48.0" prefWidth="166.0" style="-fx-border-color: white;" text="Note:&#10;Payment is made upon owning &#10;the car">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

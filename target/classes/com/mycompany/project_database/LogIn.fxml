@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: ht; -fx-border-color: E8D004;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.project_database.LogIn">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="341.0" style="-fx-background-color: EAEAEA; -fx-border-color: E8D004; -fx-background-size: 20;" AnchorPane.rightAnchor="359.0">
+         <children>
+            <Label layoutX="75.0" layoutY="268.0" prefHeight="70.0" prefWidth="179.0" text="Golden">
+               <font>
+                  <Font name="Century Gothic Bold" size="48.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.37914691943127965" endY="1.0" startX="0.3696682464454976" startY="0.5355450236966824">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8199999928474426" green="0.73253333568573" blue="0.164000004529953" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="87.0" layoutY="338.0" prefHeight="29.0" prefWidth="155.0" text="For Car Trade">
+               <font>
+                  <Font name="Georgia" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="190.0" fitWidth="292.0" layoutX="25.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@rs_auto665_benz.94833f29.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="581.0" layoutY="380.0" mnemonicParsing="false" onAction="#signIn" prefHeight="29.0" prefWidth="71.0" style="-fx-background-color: EAEAEA; -fx-border-color: E8D004; -fx-border-radius: 5;" text="Sign in">
+         <font>
+            <Font name="Centaur" size="14.5" />
+         </font>
+      </Button>
+      <TextField fx:id="id" layoutX="461.0" layoutY="185.0" prefHeight="29.0" prefWidth="189.0" style="-fx-border-color: E8D004;">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font></TextField>
+      <Label layoutX="595.0" layoutY="94.0" />
+      <Label layoutX="383.0" layoutY="190.0" text="ID">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="password" layoutX="461.0" layoutY="246.0" prefHeight="29.0" prefWidth="189.0" style="-fx-border-color: E8D004;">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font></TextField>
+      <Label layoutX="383.0" layoutY="251.0" prefHeight="19.0" prefWidth="71.0" text="Password">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="65.0" prefHeight="29.0" prefWidth="105.0" text="Welcome" textFill="#cdb60e" AnchorPane.topAnchor="55.0">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="461.0" layoutY="380.0" mnemonicParsing="false" onAction="#signUp" prefHeight="29.0" prefWidth="71.0" style="-fx-background-color: EAEAEA; -fx-border-color: E8D004; -fx-border-radius: 5;" text="Sign up">
+         <font>
+            <Font name="Centaur" size="14.5" />
+         </font>
+      </Button>
+      <Label fx:id="massage" layoutX="461.0" layoutY="292.0" prefHeight="29.0" prefWidth="189.0" textFill="#f52929">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
